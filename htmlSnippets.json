@@ -104,7 +104,7 @@
 		  "</html>"
 		],
 		"description": "email boilerplate"
-	  }
+	  },
 
 
 	  "fluidtable": {
@@ -113,7 +113,7 @@
 		  "border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"${1:100%}\" role=\"presentation\""
 		],
 		"description": "fluidtable"
-	  }
+	  },
 
 	 
 
