@@ -1,17 +1,17 @@
 {
-  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
-  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
-  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
-  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-  // $1, $2 for tab stops, $0 for the final cursor position, and \${1:label}, \${2:another} for placeholders.
-  // Placeholders with the same ids are connected.
-  // Example:
-  // "Print to console": {
-  //   "scope": "javascript,typescript",
-  //   "prefix": "log",
-  //   "body": ["console.log('$1');", "$2"],
-  //   "description": "Log output to console"
-  // },
+	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
 
 	"email boilerplate": {
 		"prefix": "email",
@@ -104,66 +104,103 @@
 		  "</html>"
 		],
 		"description": "email boilerplate"
+	  }
+
+
+	  "fluidtable": {
+		"prefix": "tfluid",
+		"body": [
+		  "border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"${1:100%}\" role=\"presentation\""
+		],
+		"description": "fluidtable"
+	  }
+
+	 
+
+	  "table cell": {
+		"prefix": "dcell",
+		"body": [
+		  "align=\"center\" valign=\"top\""
+		],
+		"description": "table cell"
 	  },
 
-		"fluid table": {
-			"prefix": "fluidtable",
-			"body": [
-				"<table  cellspacing=\"0\" cellpadding=\"0\" width=\"${1:100%}\" border=\"0\">",
-				"  <tr>",
-				"    <td align=\"center\" valing=\"top\" ${2:}>",
-				"      ${3:content}",
-				"    </td>",
-				"  </tr>",
-				"</table>"
-			],
-			"description": "fluid table"
-		},
+	  "text margin":{
+		"prefix": "margin",
+		"body": [
+		"style=\"margin:0\"",
+		],
+		"description": "removing margin"
 
-		"column": {
-			"prefix": "column",
-			"body": [
-				"<div style=\"display:inline-block;min-width:${1:300}px;width:100%;max-width:${2:50}%;\">",
-					"	${3:content}",
-				"</div>"
-			],
-			"description": "column"
-		},
 
-		"ghost column": {
-			"prefix": "if",
-			"body": [
-				"<!--[if (gte mso 9)|(IE)]>",
-				"<table  cellspacing=\"0\" cellpadding=\"0\" width=\"660\"   border=\"0\">",
-				"<tr>",
-				"<td align=\"left\" valing=\"top\" width=\"${1:330}\" >",
-				"<![endif]-->"
-			],
-			"description": "column"
-		},
+	  },
 
-		"ghost table end": {
-			"prefix": "endif",
-			"body": [
-			  "<!--[if (gte mso 9)|(IE)]>",
-			  "</td>",
-			  "</tr>",
-			  "</table>",
-			  "<![endif]-->"
-			],
-			"description": "ghost table end"
-		  },
+	  "text padding":{
+		"prefix": "textpadding",
+		"body": [
+			"style=\"padding: ${1:0} ${2:0} 0 ${3:0};\""
+		],
+		"description": "adding padding to text"
+	  },
 
-		  "middle ghost column": {
-			"prefix": "middleif",
-			"body": [
-			  "<!--[if (gte mso 9)|(IE)]>",
-			  "</td>",
-			  "<td align=\"left\" valing=\"top\" width=\"${1:330}\">",
-			  "<![endif]-->"
-			],
-			"description": "middle ghost column"
-		  }
+	  "fluid table": {
+		"prefix": "fluidtable",
+		"body": [
+			"<table  cellspacing=\"0\" cellpadding=\"0\" width=\"${1:100%}\" border=\"0\">",
+			"  <tr>",
+			"    <td align=\"center\" valing=\"top\" ${2:}>",
+			"      ${3:content}",
+			"    </td>",
+			"  </tr>",
+			"</table>"
+		],
+		"description": "fluid table"
+	},
+
+	"column": {
+		"prefix": "column",
+		"body": [
+			"<div style=\"display:inline-block;min-width:${1:300}px;width:100%;max-width:${2:50}%;\">",
+				"	${3:content}",
+			"</div>"
+		],
+		"description": "column"
+	},
+
+	"ghost column": {
+		"prefix": "if",
+		"body": [
+			"<!--[if (gte mso 9)|(IE)]>",
+			"<table  cellspacing=\"0\" cellpadding=\"0\" width=\"660\"   border=\"0\">",
+			"<tr>",
+			"<td align=\"left\" valing=\"top\" width=\"${1:330}\" >",
+			"<![endif]-->"
+		],
+		"description": "column"
+	},
+
+	"ghost table end": {
+		"prefix": "endif",
+		"body": [
+		  "<!--[if (gte mso 9)|(IE)]>",
+		  "</td>",
+		  "</tr>",
+		  "</table>",
+		  "<![endif]-->"
+		],
+		"description": "ghost table end"
+	  },
+
+	  "middle ghost column": {
+		"prefix": "middleif",
+		"body": [
+		  "<!--[if (gte mso 9)|(IE)]>",
+		  "</td>",
+		  "<td align=\"left\" valing=\"top\" width=\"${1:330}\">",
+		  "<![endif]-->"
+		],
+		"description": "middle ghost column"
+	  },
 
 
 
