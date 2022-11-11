@@ -93,11 +93,11 @@
 		  "    </head>",
 		  "    <body id=\"body\" style=\"margin: 0 !important;padding:0 !important;\">",
 		  "",
-		  "            <div style=\"display: none;\">",
+		  "    		<div style=\"display: none;\">",
 		  "",
-		  "            </div>",
+		  "         </div>",
 		  "",
-		  "             ${2:content}    ",
+		  "         ${2:content}    ",
 		  "        ",
 		  "    </body>",
 		  "    ",
@@ -110,7 +110,7 @@
 	  "fluidtable": {
 		"prefix": "tfluid",
 		"body": [
-		  "border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"${1:100%}\" role=\"presentation\""
+		  "border=\"0\" cellspacing=\"0\" cellpadding=\"0\" ${1:height=\"100%\"} width=\"${2:100%}\" role=\"presentation\""
 		],
 		"description": "fluidtable"
 	  },
