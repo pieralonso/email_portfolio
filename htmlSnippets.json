@@ -148,7 +148,7 @@
 		"body": [
 			"<table  cellspacing=\"0\" cellpadding=\"0\" width=\"${1:100%}\" border=\"0\">",
 			"  <tr>",
-			"    <td align=\"center\" valing=\"top\" ${2:}>",
+			"    <td align=\"center\" valing=\"top\"${2:}>",
 			"      ${3:content}",
 			"    </td>",
 			"  </tr>",
@@ -171,9 +171,9 @@
 		"prefix": "if",
 		"body": [
 			"<!--[if (gte mso 9)|(IE)]>",
-			"<table  cellspacing=\"0\" cellpadding=\"0\" width=\"660\"   border=\"0\">",
+			"<table  cellspacing=\"0\" cellpadding=\"0\" width=\"660\" border=\"0\">",
 			"<tr>",
-			"<td align=\"left\" valing=\"top\" width=\"${1:330}\" >",
+			"<td align=\"left\" valing=\"top\" width=\"${1:330}\">",
 			"<![endif]-->"
 		],
 		"description": "column"
